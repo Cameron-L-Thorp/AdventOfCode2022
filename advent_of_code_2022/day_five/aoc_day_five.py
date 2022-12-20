@@ -35,6 +35,10 @@ with open('day_five\day_five_input.txt') as input:
         for i in range(0, amount):
             crane_stack.append(stack_dictionary[origin_pile].pop())
         
+        #for adding the stack one at a time
+        #stack_dictionary[destination_pile] += crane_stack
+
+        #for adding stacks in order
         while len(crane_stack) > 0:
             stack_dictionary[destination_pile].append(crane_stack.pop())
 
