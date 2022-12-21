@@ -5,7 +5,7 @@ def directory_size_calc(index):
     dir_level = 1    
     dir_size = 0
     command_num = 0
-    for command in all_commands[index:len(all_commands)]:
+    for command in all_commands[index + 1:len(all_commands)]:
         if dir_level > 0:
             try:
                 if int(command[0]) != '':
@@ -58,7 +58,14 @@ for dir in directories.values():
         total_for_dir_under_100000 += dir
 
 print(total_for_dir_under_100000)
-    
+
+total_space = 0
+for dir in directories.values():
+    total_space += dir
+print(total_space)    
+
+for dir in directories.values():
+    pass
     #print(all_commands)
 
 # ('bjrbjh10', 43466912)
