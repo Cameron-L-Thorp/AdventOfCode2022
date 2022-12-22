@@ -17,3 +17,7 @@ For part two, each option from the oppnent can be responded to with three differ
 Initially, a dicionary is set to define the values of the different items in a pack. Since the packs are always even in items, and have the same amount of items in each pouch, I split the packs in half to itterate through one side and check if each item was containted in the other. Once found, the value of that item is added to the total of item priorities and the loop is broken to move onto the next pack (this break is to ensure that only one copy is added to the sum).
 For part two, every third packs' items are checked against the next two and once an item is found in all three, that item is added to the badges (a sum of all common items between groups).
 
+## Day4:
+The numbers given in each input pair are used to create a range, and then turned into a list of those numbers. 
+Part one measures to see if either range fully contains the other.
+Part two checks to see if they overlap at all based on the 0th and -1st indicies.
