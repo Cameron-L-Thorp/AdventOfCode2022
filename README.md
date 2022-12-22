@@ -11,4 +11,4 @@ In order to find the highest three elves, the list of calorie totals is sorted, 
 
 ## Day2:
 For part one, three conditionals were used to determine then result of the match, as there are three possible options ('rock', paper', or 'scissors'). Once a conditional is met, the score is added based on the move and win result.
-For part two, each option from the oppnent can be responded to with three different player options. This resulted in an additional three nested conditionals but a difinitive score.
+For part two, each option from the oppnent can be responded to with three different player options. This resulted in an additional three nested conditionals but a definitive score.
