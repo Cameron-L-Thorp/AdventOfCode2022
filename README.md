@@ -21,3 +21,10 @@ For part two, every third packs' items are checked against the next two and once
 The numbers given in each input pair are used to create a range, and then turned into a list of those numbers. 
 Part one measures to see if either range fully contains the other.
 Part two checks to see if they overlap at all based on the 0th and -1st indicies.
+
+
+## Day5:
+The stacks of crates provided were turned into lists with the top item located at index -1 so the pop method can be used effectively on the python collections. 
+For part one, the items are popped and appended directly to the target pile as the crane can only move one crate at a time. 
+Part two allows for the movement of multiple crates, while maintaining the order of the stack they pick up. To accomplish this, a temp stack is created that the crates are popped into and then popped out of, into the target pile allowing for the crates to maintain their original order.
+This was done to emulate stacks in python, but it would likely have been simpler to use negative indecies to append a collection range, and then remove them from their original list.
