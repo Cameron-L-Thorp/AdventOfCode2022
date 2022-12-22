@@ -38,3 +38,9 @@ Unfortunately, many of the file names on the input were the same as directory na
 
 ## Day8:
 Currently unsolved. My program can accurately measure the interior trees from the top-left, or top-right, but seems to have issues when trying to compare values from the bottom, or right sides. I haven't been able to isolate where the issue is coming from as it occasionally produces the correct answer for the test case and then provides the wrong answer for the input. I think to solve this I need to get more comfortable with matrix manipulation (about half the time I spent on this one, I wasn't using the indecies for the multi-dimentional lists properly -_-)
+
+## Day9:
+Not started.
+
+## Day10:
+To solve for part one, I created a loop that acted on each input line, and used a conditional to determine how much the counter and or frequency should increase, and in what order. Part two was more challenging, but once the pixel was measured prior to the counter_increasing it worked like a charm. In order to find the pixel, I measured the frequency at each point the counter increased, and if the frequency was within the -1:1 threshold, a '#' was appended to a string. Every time a pixel was populated, the length of the string was checked, if it was 40 (the width of the screen) then it would be appended to a list and the string would be reset to zero characters.
