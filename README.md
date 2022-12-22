@@ -28,3 +28,6 @@ The stacks of crates provided were turned into lists with the top item located a
 For part one, the items are popped and appended directly to the target pile as the crane can only move one crate at a time. 
 Part two allows for the movement of multiple crates, while maintaining the order of the stack they pick up. To accomplish this, a temp stack is created that the crates are popped into and then popped out of, into the target pile allowing for the crates to maintain their original order.
 This was done to emulate stacks in python, but it would likely have been simpler to use negative indecies to append a collection range, and then remove them from their original list.
+
+## Day6:
+This day, I used a function to check the next four characters, looping through the signal one character at a time. These characters are appended to a list only if they are unique, which is returned to the loop. The loop then measures the length of the returned list, if it is 4, then the signal position is recorded and the loop breaks. The same approach was taken for the second part, where it was a string of size 14.
